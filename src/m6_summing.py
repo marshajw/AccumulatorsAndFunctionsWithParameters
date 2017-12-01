@@ -122,6 +122,7 @@ def sum_square_roots(n):
          sqrt(2) + sqrt(4) + sqrt(6) + sqrt(8) + sqrt(10),
       which is about 11.854408.
     """
+
     # ------------------------------------------------------------------
     # DONE: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).

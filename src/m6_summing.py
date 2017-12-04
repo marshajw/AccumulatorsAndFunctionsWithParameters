@@ -9,6 +9,7 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
 
 import math
 
+
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_cosines()
@@ -31,19 +32,19 @@ def run_test_sum_cosines():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected = 0.72
-    answer = sum_cosines(7)
+    expected = 0.134
+    answer = sum_cosines(3)
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 2:
-    expected = -0.23
+    expected = 0.724
     answer = sum_cosines(6)
     print('Test 2 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 3:
-    expected = -0.51
+    expected = -0.235
     answer = sum_cosines(5)
     print('Test 3 expected:', expected)
     print('       actual:  ', answer)
@@ -69,9 +70,8 @@ def sum_cosines(n):
     # ------------------------------------------------------------------
 
     total = 0
-    for k in range(n):
+    for k in range(n+1):
         total = total + math.cos(k)
-
     return total
 
 
@@ -91,19 +91,19 @@ def run_test_sum_square_roots():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected = 4.41
+    expected = 5.863
     answer = sum_square_roots(3)
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 2:
-    expected = 20.06
-    answer = sum_square_roots(8)
+    expected = 11.854
+    answer = sum_square_roots(5)
     print('Test 2 expected:', expected)
     print('       actual:  ', answer)
 
     # Test 3:
-    expected = 94.68
+    expected = 100.322
     answer = sum_square_roots(22)
     print('Test 3 expected:', expected)
     print('       actual:  ', answer)
@@ -132,8 +132,8 @@ def sum_square_roots(n):
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
 
-    total = 1
-    for k in range(n):
+    total = 0
+    for k in range(n+1):
         total = total + (math.sqrt(k*2))
 
     return total

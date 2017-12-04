@@ -23,7 +23,7 @@ def main():
     # print_sequence3()
     # draw_circles3()
     # print_cosines()
-    draw_cosines_and_sines()
+    # draw_cosines_and_sines()
 
 
 def print_sequence1():
@@ -75,7 +75,6 @@ def draw_circles1():
     center = rg.Point(200, 200)
     for k in range(0, 21):
         circle = rg.Circle(center, k*10)
-        print(circle.radius)
         circle.attach_to(window)
         window.render(0.1)
 
@@ -140,7 +139,6 @@ def draw_circles2():
             center = rg.Point(k, 100)
             circle = rg.Circle(center, 10)
             circle.fill_color = 'blue'
-            print(circle.center.x)
             circle.attach_to(window)
             window.render(0.1)
 
@@ -194,7 +192,6 @@ def draw_circles3():
     center = rg.Point(200, 150)
     for k in range(1, 101):
         circle = rg.Circle(center, k)
-        print(circle.radius)
         circle.attach_to(window)
         window.render(0.1)
 
@@ -255,7 +252,7 @@ def draw_cosines_and_sines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 9. Implement this function, per its doc-string above.
+    # DONE: 9. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
@@ -266,7 +263,6 @@ def draw_cosines_and_sines():
 
     window = rg.RoseWindow(400, 400)
 
-    center = rg.Point(200, 150)
     for k in range(1, 101):
         x = 200 + (80 * math.cos(k))
         y = 200 + (80 * math.sin(k))
